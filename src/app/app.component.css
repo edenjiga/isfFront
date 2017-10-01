@@ -1,0 +1,117 @@
+/* COLORS */
+
+.mintgreen{
+    color: #24d39a;
+}
+
+.white{
+    color: #eeeeee;
+}
+
+.gray{
+    color: #9d9d9d;
+}
+
+/* GLOBAL */
+
+header{
+    background: #555555;
+}
+
+a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+nav ul{
+    text-align: right;
+}
+
+span{
+    font-size: 28px;
+}
+
+.dot{
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.fa{
+    margin-right: 5px;
+}
+
+
+
+/* HEADER */ 
+
+
+/* JUMBOTRON */
+
+.jumbotron{
+    margin-bottom: 0px;
+    align-content: center;
+    text-align: center;
+    background-image: url('../assets/img/topbaner.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.btn-jumbotron{
+    background: #24d39a;
+    height: 50px;
+    width: 73px;
+}
+
+#search{
+    width: 30em;
+    height: 50px;
+}
+
+
+
+/* FEATURE */
+
+.background-featured{
+    background: #ecf1f4;
+}
+
+#f-title{
+    color: #a3a4a4;
+}
+
+#featured{
+    margin-bottom: 50px;
+}
+
+/* COURSE */
+
+#cours{
+    margin-top: 20px;
+}
+
+.a-course{
+    font-size: 28px;
+    color: #24d39a;
+}
+
+.col-sm-4{
+    margin-bottom: 20px;
+}
+
+.center{
+  margin: 0 auto;
+}
+
+
+
+
+
+
+

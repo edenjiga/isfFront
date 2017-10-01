@@ -1,0 +1,49 @@
+img{
+    width: 100%;
+}
+
+strong{
+    font-family: 'Ubuntu', sans-serif;
+    color: #363A39;
+}
+
+span{
+    font-size: 18px;
+}
+
+p{
+    margin-top: 27px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.serif{
+    font-family: 'Slabo 27px', serif;
+}
+
+.container{
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+.btn{
+    background: #24d39a;
+    /* height: 28px; */
+    width: 76px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center; 
+    margin-top: -10px;
+}
+
+/* COLORS  */
+
+.white{
+    color: white;
+}
+
+.gray-m{
+    color: #9eaaa9;
+}
+
+.gray{
+    color: #585e5d;
+}

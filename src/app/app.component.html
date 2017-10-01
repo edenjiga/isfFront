@@ -1,0 +1,93 @@
+<header>
+  <div class="container">
+    <div class="d-flex justify-content-end">
+      <div class="p-1">
+          <a href="#" class="gray"><i class="fa fa-map-marker" aria-hidden="true"></i><strong>Florida</strong></a>
+      </div>  
+      <p class="dot gray">&#9679;</p>
+      <div class="p-1">
+        <a href="#" class="white"><strong>Support Center</strong></a>
+      </div>
+      <p class="dot gray">&#9679;</p>
+      <div class="p-1">
+        <a href="#" class="mintgreen"><strong>Login</strong></a>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <nav class="navbar navbar-toggleable">
+    <img src="../assets/img/CEBroker.png"  height="54" width="100">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link navbar-brand gray">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navbar-brand gray">Account Options</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navbar-brand gray">Course Search</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link navbar-brand gray dropdown-toggle">Organizations
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navbar-brand gray">About</a>
+      </li>
+      <li class="nav-item">
+          <button type="button" class="btn btn-primary">7 day trial</button>
+      </li>
+    </ul>
+</nav>
+</div>
+<div class="jumbotron">
+  <h1 class="jumbotron-heading">Course Search</h1>
+  <div class="input-group">
+    <form f="ngForm" (ngSubmit)="searchCourse(search.value)" class="center">
+      <div class="row">
+        <div class="col col-sm-8">
+          <input type="text" id="search" placeholder="Search courses and providers..." 
+          name="search" #search="ngModel" ngModel>
+        </div>
+        <div class="col col-sm-4">
+          <span class="input-group-btn">
+        <button class="btn btn-jumbotron white" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </span>
+        </div>
+      </div>
+    </form>
+  </div>
+  <p class="white">Florida | Registered Nurse Florida</p>
+</div>
+
+<div class="background-featured">
+  <div class="container">
+      <span id="f-title">Featured Courses</span>
+  <div id="featured">
+  <app-featured *ngFor="let feat of featured"
+   [imgId]="feat.coursePublication.course.featuredBanner"
+   [name]="feat.coursePublication.course.name"
+   [provider]="feat.coursePublication.course.provider.name"
+   [totalHours]="0"
+   [description]="'Null'"
+   [price]= "0"
+   ></app-featured>
+  </div>
+   <a href="#" class="a-course">{{numCourses+" "}}<span class="gray">Results</span></a>
+   <div id="cours">
+   <div class="row">
+     <div class="col col-sm-4" *ngFor="let course of courses">
+      <app-courses
+      [name]="course.course.name"
+      [provider]="course.course.provider.name"
+      [totalHours]="course.course.components[0].profession.totalHours"
+      [description]="course.course.deliveryMethod.description"
+      [price]= "course.price" 
+      ></app-courses>
+     </div>
+    </div>
+    </div>
+   </div>
+
+</div>

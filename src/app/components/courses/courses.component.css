@@ -1,0 +1,55 @@
+strong{
+    
+    color: #363A39;
+}
+
+p{
+    margin-top: 27px;
+    
+    
+}
+
+
+strong, p{
+    margin-left: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+div{
+    height: 100%;
+}
+
+span{
+    font-size: 18px;
+}
+
+.btn{
+    background: #24d39a;
+    /* height: 28px; */
+    width: 76px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center; 
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.serif{
+    font-family: 'Slabo 27px', serif;
+}
+
+.b-white{
+    background: #ffffff;
+}
+
+/* COLOR */
+.white{
+    color: white;
+}
+
+.gray-m{
+    color: #9eaaa9;
+}
+
+.gray{
+    color: #585e5d;
+}
